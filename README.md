@@ -1,4 +1,4 @@
-# Voicemail Closing Bot
+# Voicemail Closing SlackBot
 
 Bot that automates enabling voicemail closing and sends screenshot of closing action to slack channel
 
