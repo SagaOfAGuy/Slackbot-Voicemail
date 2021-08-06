@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pillow = "*"
+chromedriver-py = "==91.0.4472.19"
+selenium = "*"
+python-dotenv = "*"
+requests = "*"
+slack-sdk = "*"
+schedule = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
