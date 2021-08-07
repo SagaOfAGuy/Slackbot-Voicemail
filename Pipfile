@@ -9,7 +9,7 @@ chromedriver-py = "==91.0.4472.19"
 selenium = "*"
 python-dotenv = "*"
 requests = "*"
-slack-sdk = "*"
+python-crontab = "*"
 schedule = "*"
 
 [dev-packages]

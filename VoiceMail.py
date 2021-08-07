@@ -1,7 +1,6 @@
 from selenium import webdriver
 import logging
 import os
-import subprocess
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
@@ -16,7 +15,6 @@ from dotenv import load_dotenv
 import PIL
 from PIL import Image
 import io
-import requests
 from chromedriver_py import binary_path
 
 # import environment variables
@@ -29,6 +27,10 @@ logging.basicConfig(filename='./Log.log', level=logging.INFO)
 chrome_options = Options()
 chrome_options.add_argument("window-size=1920,1080")
 chrome_options.add_argument("headless")
+#chrome_options.add_argument("--no-sandbox")
+#chrome_options.add_argument("--disable-setuid-sandbox")
+#chrome_options.add_argument("--incognito")
+
 driver = webdriver.Chrome(executable_path=binary_path, options=chrome_options)
 wait = WebDriverWait(driver, 20)
 
@@ -104,7 +106,4 @@ def __change_settings():
 def close():
     __login()
     __change_settings()
-
-# main method
-if __name__=="__main__":
-    close()
+close()
